@@ -1,5 +1,5 @@
 {
-  "name": "ArtGallery",
+  "name": "art-gallery",
   "version": "1.0.0",
   "description": "ArtGallery",
   "main": "server.js",

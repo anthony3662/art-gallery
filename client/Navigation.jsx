@@ -21,6 +21,8 @@ const menuCSS = {
 
 const logoCSS = {
   width: 0.2 * window.innerWidth,
+  height: 0.1 * window.innerWidth,
+  objectFit: 'cover',
   marginRight: 0.03 * window.innerWidth,
   cursor: 'pointer'
 };

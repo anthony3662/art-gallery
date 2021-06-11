@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-const isMobile = window.innerWidth <= 600;
+const isMobile = window.screen.width <= 600 || window.innerWidth <= 600;
 
 import Navigation from './Navigation.jsx';
 import MobileNavigation from './MobileNavigation.jsx';
 import Gallery from './Gallery.jsx';
 import Videos from './Videos.jsx';
+import CV from './CV.jsx';
 
 const bodyCSS = {
   display: 'flex',
@@ -21,15 +22,20 @@ class App extends React.Component {
     this.loadPaintings = this.loadPaintings.bind(this);
     this.loadDrawings = this.loadDrawings.bind(this);
     this.loadVideos = this.loadVideos.bind(this);
+    this.loadCV = this.loadCV.bind(this);
     this.changePage = this.changePage.bind(this);
+    this.expandGallery = this.expandGallery.bind(this);
+    this.closeGallery = this.closeGallery.bind(this);
 
     this.state = {
       page: 'Paintings',
       dataReceived: false,
+      expanded: false,
 
       paintings: {},
       drawings: {},
-      videos: []
+      videos: [],
+      cv: ''
     };
   }
 
@@ -38,6 +44,7 @@ class App extends React.Component {
     promises.push(this.loadPaintings());
     promises.push(this.loadDrawings());
     promises.push(this.loadVideos());
+    promises.push(this.loadCV())
     Promise.all(promises)
       .then(() => {
         this.setState({
@@ -88,26 +95,57 @@ class App extends React.Component {
     });
   }
 
+  loadCV() {
+    return axios.get('/cv')
+    .then((response) => {
+      console.log('CV', response.data);
+      this.setState({
+        cv: response.data
+      });
+    })
+    .catch((err) => {
+      console.log('cv failed to load', err);
+    });
+  }
+
   changePage(page) {
     this.setState({
       page: page
     });
   }
 
+  expandGallery() {
+    this.setState({
+      expanded: true
+    });
+  }
+
+  closeGallery() {
+    this.setState({
+      expanded: false
+    });
+  }
+
   render() {
     return (
       <div style={bodyCSS}>
-        {!isMobile &&
+        {!isMobile && !this.state.expanded &&
           <Navigation changePage={this.changePage}/>
         }
+        {isMobile && !this.state.expanded &&
+          <MobileNavigation changePage={this.changePage}/>
+        }
         {this.state.dataReceived && this.state.page === 'Paintings' &&
-          <Gallery collections={this.state.paintings}/>
+          <Gallery collections={this.state.paintings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }
         {this.state.dataReceived && this.state.page === 'Drawings' &&
-          <Gallery collections={this.state.drawings} />
+          <Gallery collections={this.state.drawings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }
         {this.state.dataReceived && this.state.page === 'Videos' &&
           <Videos videos={this.state.videos}/>
+        }
+        {this.state.dataReceived && this.state.page === 'CV' &&
+          <CV text={this.state.cv}/>
         }
       </div>
     );

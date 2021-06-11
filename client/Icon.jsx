@@ -1,5 +1,5 @@
 import React from 'react';
-const isMobile = window.innerWidth <= 600;
+const isMobile = window.screen.width <= 600 || window.innerWidth <= 600;
 //props.collection, props.index, props.url, props.iconClick(collection, index)
 
 const imgCSS = {
@@ -12,7 +12,7 @@ const imgCSS = {
 
 var Icon = function(props) {
   return (
-    <img style={imgCSS} src={props.url}/>
+    <img style={imgCSS} src={props.url} onClick={() => {props.iconClick(props.collection, props.index)}}/>
   );
 }
 export default Icon;

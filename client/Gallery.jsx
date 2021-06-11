@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from './icon.jsx';
+import ExpandedGallery from './ExpandedGallery.jsx';
 
 const wrapperCSS = {
   display: 'flex',
@@ -24,6 +25,28 @@ const collectionNameCSS = {
 class Gallery extends React.Component {
   constructor(props) {
     super(props);
+    this.iconClick = this.iconClick.bind(this);
+    this.closeGallery = this.closeGallery.bind(this);
+
+    this.state = {
+      expandedCollection: undefined,
+      expandedIndex: 0
+    };
+  }
+
+  iconClick(collection, index) {
+    this.setState({
+      expandedCollection: collection,
+      expandedIndex: index
+    });
+    this.props.expandGallery();
+  }
+
+  closeGallery() {
+    this.setState({
+      expandedCollection: undefined
+    });
+    this.props.closeGallery();
   }
 
   render() {
@@ -31,7 +54,7 @@ class Gallery extends React.Component {
     for (var collection in this.props.collections) {
       var icons = [];
       for (var i = 0; i < this.props.collections[collection].length; i++) {
-        icons.push(<Icon collection={collection} index={i} url={this.props.collections[collection][i]}/>);
+        icons.push(<Icon collection={collection} index={i} url={this.props.collections[collection][i]} iconClick={this.iconClick}/>);
       }
       collectionDivs.push(
         <div>
@@ -45,7 +68,12 @@ class Gallery extends React.Component {
     }
     return (
       <div style={wrapperCSS}>
-        {collectionDivs}
+        {!this.state.expandedCollection &&
+          collectionDivs
+        }
+        {this.state.expandedCollection &&
+          <ExpandedGallery images={this.props.collections[this.state.expandedCollection]} startingIndex={this.state.expandedIndex} close={this.closeGallery} />
+        }
       </div>
     );
   }
