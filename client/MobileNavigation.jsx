@@ -19,7 +19,7 @@ const buttonCSS = {
   backgroundColor: 'transparent',
   fontFamily: 'Chalkduster',
   fontVariant: 'small-caps',
-  fontSize: 50,
+  fontSize: 100,
 };
 
 const selectedCSS = {
@@ -29,7 +29,7 @@ const selectedCSS = {
   backgroundColor: 'transparent',
   fontFamily: 'Chalkduster',
   fontVariant: 'small-caps',
-  fontSize: 60
+  fontSize: 120
 };
 
 const menuCSS = {
