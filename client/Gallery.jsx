@@ -2,6 +2,9 @@ import React from 'react';
 import Icon from './icon.jsx';
 import ExpandedGallery from './ExpandedGallery.jsx';
 
+const isMobile = window.screen.width <= 600 || window.innerWidth <= 600;
+
+
 const wrapperCSS = {
   display: 'flex',
   flexDirection: 'column',
@@ -13,8 +16,8 @@ const collectionCSS = {
   alignItems: 'center',
   alignContent: 'flex-start',
   justifyContent: 'space-between',
-  paddingLeft: 0.11 * window.innerWidth,
-  paddingRight: 0.11 * window.innerWidth
+  paddingLeft: isMobile ?  0.05 * window.innerWidth : 0.11 * window.innerWidth,
+  paddingRight: isMobile ? 0.05 * window.innerWidth : 0.11 * window.innerWidth
 };
 
 const collectionNameCSS = {
