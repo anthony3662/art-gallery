@@ -20,11 +20,54 @@ class ExpandedGallery extends React.Component {
     this._onClick = this._onClick.bind(this);
     this.cycleLeft = this.cycleLeft.bind(this);
     this.cycleRight = this.cycleRight.bind(this);
+    this.handleTouchStart = this.handleTouchStart.bind(this);
+    this.handleTouchMove = this.handleTouchMove.bind(this);
 
     this.state = {
       index: this.props.startingIndex
     };
   }
+
+  componentDidMount() {
+    document.addEventListener('touchstart', this.handleTouchStart, false);
+    document.addEventListener('touchmove', this.handleTouchMove, false);
+    this.xDown = null;
+    this.yDown = null;
+  }
+
+  handleTouchStart(evt) {
+    this.xDown = evt.touches[0].clientX;
+    this.yDown = evt.touches[0].clientY;
+  };
+
+  handleTouchMove(evt) {
+    if ( ! this.xDown || ! this.yDown ) {
+        return;
+    }
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+    var xDiff = this.xDown - xUp;
+    var yDiff = this.yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        if ( xDiff > 0 ) {
+        /* left swipe */
+          this.cycleLeft();
+        } else {
+        /* right swipe */
+          this.cycleRight();
+        }
+    } else {
+        if ( yDiff > 0 ) {
+        /* up swipe */
+        } else {
+        /* down swipe */
+        }
+    }
+    /* reset values */
+    this.xDown = null;
+    this.yDown = null;
+  };
 
   _onClick(e) {
     if (e.clientX < window.innerWidth * 0.5) {
