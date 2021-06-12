@@ -47,7 +47,7 @@ const selectedCSS = {
   cursor: 'pointer'
 };
 
-const logoURL = 'https://images.squarespace-cdn.com/content/v1/5b189c5870e802e5235557bb/1575349142540-3M3CF52BRESZIX334XQE/ke17ZwdGBToddI8pDm48kPpAxxAMkdWLvZ8KPwskBm17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p5uBJOnOmCWBN4JfYsIDyS6K0NYX-Vp73rpruyycpr9CU5uQp4nuBxKgx0JQoevkw/Horn-loudspeaker-birds+soaked.jpg?format=750w';
+const logoURL = 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/09/tostitos.jpg?resize=640%2C360&ssl=1';
 
 //this.props.changePage(page)
 class Navigation extends React.Component {
