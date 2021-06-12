@@ -19,7 +19,8 @@ const collectionCSS = {
 
 const collectionNameCSS = {
   marginLeft: 0.1 * window.innerWidth,
-  fontFamily: 'Chalkduster'
+  fontFamily: 'Chalkduster',
+  fontSize: window.screen.width <= 600 ? 80 : 25
 }
 
 class Gallery extends React.Component {
