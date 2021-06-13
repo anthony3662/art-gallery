@@ -1,17 +1,24 @@
 import React from 'react';
 //this.props.images, this.props.startingIndex, this.props.close
+const isMobile = window.screen.width <= 600 || window.innerWidth <= 600;
 
 const imageCSS = {
   width: window.innerWidth,
-  height: window.innerHeight,
+  height: isMobile ? 0.9 * window.innerHeight : 0.98 * window.innerHeight ,
   objectFit: 'contain'
 };
 
 const closeCSS = {
   position: 'absolute',
-  top: 0,
+  top: 5,
   left: window.innerWidth - 0.05 * window.innerHeight
-}
+};
+
+
+const mobileDescriptionCSS = {
+  fontFamily: 'Chalkduster',
+  textAlign: 'center'
+};
 
 class ExpandedGallery extends React.Component {
   constructor(props) {
@@ -96,11 +103,44 @@ class ExpandedGallery extends React.Component {
   }
 
   render() {
+
+    var left = 0.885 * window.innerWidth;
+    if (this.props.images[0].name === 'No Recess' || this.props.images[0].name === 'For the Sake of Accumulating Facts' || this.props.images[0].name === 'Sanitarribley') {
+      left = 0.17 * window.innerWidth;
+    }
+    const descriptionCSS = {
+      position: 'absolute',
+      zIndex: 3,
+      left: left,
+      top: 0.75 * window.innerHeight,
+      fontFamily: 'Verdana',
+      textAlign: isMobile ? 'center' : 'left'
+    };
     return (
       <div>
-        <img style={imageCSS} src={this.props.images[this.state.index]} onClick={this._onClick}/>
+        <img style={imageCSS} src={this.props.images[this.state.index].url} onClick={this._onClick}/>
         <svg id="expandedGalleryClose" style={closeCSS} width={window.innerHeight * 0.05} height={window.innerHeight * 0.05} onClick={this.props.close} data-name="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><path d="M72 11.77L60.23 0 36 24.23 11.77 0 0 11.77 24.23 36 0 60.23 11.77 72 36 47.77 60.23 72 72 60.23 47.77 36 72 11.77z"/></svg>
+      <p style={isMobile ? mobileDescriptionCSS : descriptionCSS}>
+        {this.props.images[this.state.index].name}
+        &nbsp;
 
+        {!isMobile &&
+          <br/>
+        }
+        {!isMobile &&
+          <br/>
+        }
+        acrylic on canvas, 2020
+        &nbsp;
+        {!isMobile &&
+          <br/>
+        }
+        {!isMobile &&
+          <br/>
+        }
+
+        {this.props.images[this.state.index].dimensions}
+      </p>
       </div>
     );
   }

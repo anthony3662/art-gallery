@@ -15,14 +15,15 @@ const collectionCSS = {
   flexFlow: 'row wrap',
   alignItems: 'center',
   alignContent: 'flex-start',
-  justifyContent: 'space-between',
+  justifyContent: 'center',
   paddingLeft: isMobile ?  0.05 * window.innerWidth : 0.11 * window.innerWidth,
   paddingRight: isMobile ? 0.05 * window.innerWidth : 0.11 * window.innerWidth
 };
 
 const collectionNameCSS = {
   marginLeft: 0.1 * window.innerWidth,
-  fontFamily: 'Chalkduster',
+  fontFamily: 'Helvetica',
+  fontWeight: '100',
   fontSize: window.screen.width <= 600 ? 60 : 25
 }
 
@@ -58,11 +59,11 @@ class Gallery extends React.Component {
     for (var collection in this.props.collections) {
       var icons = [];
       for (var i = 0; i < this.props.collections[collection].length; i++) {
-        icons.push(<Icon collection={collection} index={i} url={this.props.collections[collection][i]} iconClick={this.iconClick}/>);
+        icons.push(<Icon collection={collection} index={i} image={this.props.collections[collection][i]} iconClick={this.iconClick}/>);
       }
       collectionDivs.push(
         <div>
-          <h3 style={collectionNameCSS}>{collection}</h3>
+          {/* <h3 style={collectionNameCSS}>{collection}</h3> */}
           <div className="collectionDiv" style={collectionCSS}>
             {icons}
           </div>
@@ -70,13 +71,28 @@ class Gallery extends React.Component {
 
       );
     }
+
+    var imagesProp = this.props.collections[this.state.expandedCollection];
+    var startingProp = this.state.expandedIndex;
+    if (this.state.expandedCollection === 'No Recess') {
+      imagesProp = [{url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '44 x 18 inches overall'}];
+      startingProp = 0;
+    }
+    if (this.state.expandedCollection === 'For the Sake of Accumulating Facts') {
+      imagesProp = [{url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '72 x 20 inches overall'}];
+      startingProp = 0;
+    }
+    if (this.state.expandedCollection === 'Sanitarribley') {
+      imagesProp = [{url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '72 x 20 inches overall'}];
+      startingProp = 0;
+    }
     return (
       <div style={wrapperCSS}>
         {!this.state.expandedCollection &&
           collectionDivs
         }
         {this.state.expandedCollection &&
-          <ExpandedGallery images={this.props.collections[this.state.expandedCollection]} startingIndex={this.state.expandedIndex} close={this.closeGallery} />
+          <ExpandedGallery images={imagesProp} startingIndex={startingProp} close={this.closeGallery} />
         }
       </div>
     );

@@ -30,7 +30,7 @@ const logoCSS = {
 const buttonCSS = {
   border: 0,
   backgroundColor: 'transparent',
-  fontFamily: 'Chalkduster',
+  fontFamily: 'Verdana',
   fontVariant: 'small-caps',
   fontSize: 24 * window.innerWidth / 1440,
   cursor: 'pointer'
@@ -41,7 +41,7 @@ const selectedCSS = {
   fontWeight: 'bold',
   border: 0,
   backgroundColor: 'transparent',
-  fontFamily: 'Chalkduster',
+  fontFamily: 'Verdana',
   fontVariant: 'small-caps',
   fontSize: 28 * window.innerWidth / 1440,
   cursor: 'pointer'

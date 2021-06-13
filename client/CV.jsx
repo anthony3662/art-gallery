@@ -8,7 +8,8 @@ const cvCSS = {
 }
 
 const headerCSS = {
-  fontFamily: 'Chalkduster'
+  fontFamily: 'Helvetica',
+  fontWeight: '600'
 };
 
 const textCSS = {
