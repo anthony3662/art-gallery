@@ -1,6 +1,6 @@
 import React from 'react';
 
-const logoURL = 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/09/tostitos.jpg?resize=640%2C360&ssl=1';
+const logoURL = 'https://i.ibb.co/prcfbk1/logo.png';
 
 const wrapperCSS = {
   display: 'flex',
@@ -9,9 +9,9 @@ const wrapperCSS = {
 };
 
 const logoCSS = {
-  width: window.innerWidth * 0.5,
-  height: window.innerWidth * 0.25,
-  objectFit: 'cover'
+  fontFamily: 'Helvetica',
+  fontSize: 100,
+  cursor: 'pointer'
 };
 
 const buttonCSS = {
@@ -22,21 +22,24 @@ const buttonCSS = {
   fontSize: window.screen.width <= 600 ? 100 : 50,
 };
 
-const selectedCSS = {
-  // textDecoration: 'solid underline purple 5px',
-  fontWeight: 'bold',
-  border: 0,
-  backgroundColor: 'transparent',
-  fontFamily: 'Verdana',
-  // fontVariant: 'small-caps',
-  fontSize: window.screen.width <= 600 ? 100 : 50
-};
+// const selectedCSS = {
+//   // textDecoration: 'solid underline purple 5px',
+//   fontWeight: 'bold',
+//   border: 0,
+//   backgroundColor: 'transparent',
+//   fontFamily: 'Verdana',
+//   // fontVariant: 'small-caps',
+//   fontSize: window.screen.width <= 600 ? 100 : 50
+// };
+
+const selectedCSS = buttonCSS;
 
 const menuCSS = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center'
 };
+
 
 class MobileNavigation extends React.Component {
   constructor(props) {
@@ -85,7 +88,7 @@ class MobileNavigation extends React.Component {
             <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
           </div>
         }
-        <img src={logoURL} style={logoCSS} onClick={this.logoClick} />
+        <p style={logoCSS} onClick={this.logoClick} >Ben Brock</p>
       </div>
     );
   }

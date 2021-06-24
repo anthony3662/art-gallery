@@ -23,8 +23,8 @@
 
 const paintings = {
   collection0: [
-    {url: "https://i.ibb.co/RzKbRqG/20210612-182045.jpg", name: "Dad's Garage", dimensions: '36 x 36 inches'},
-    {url: 'https://i.ibb.co/DQtZKV0/20210612-182858.jpg', name: "Pilgrim's Progress", dimensions: '30 x 40 inches'},
+    {url: "https://i.ibb.co/9nBYQCy/firstone.jpg", name: "Dad's Garage", dimensions: '36 x 36 inches'},
+    {url: 'https://i.ibb.co/0FLvzFm/highquality.jpg', name: "Pilgrim's Progress", dimensions: '30 x 40 inches'},
     {url: "https://i.ibb.co/3ByGGRh/20210612-183752.jpg", name: "I Caused All my Breakups", dimensions: '40 x 30 inches'},
     {url: "https://i.ibb.co/qxpq48j/20210612-200528.jpg", name: 'Ghosted While Dating', dimensions: '18 x 20 inches'},
     {url: "https://i.ibb.co/d54pH7C/20210612-191705.jpg", name: "Camel Castle", dimensions: '20 x 18 inches'},
@@ -37,7 +37,7 @@ const paintings = {
     {url: "https://i.ibb.co/0CCRw3C/20210612-194852.jpg", name: 'Antebellum Dream Look', dimensions: '20 x 18 inches'},
     {url: "https://i.ibb.co/5YPf3Ch/20210612-195750.jpg", name: 'Celestial Flesh', dimensions: '18 x 20 inches'},
     {url: "https://i.ibb.co/6Bz6Q2D/20210612-185250.jpg", name: "Pulling Back", dimensions: '30 x 24 inches'},
-    {url: "https://i.ibb.co/HnPdVcm/20210612-184755.jpg", name: "Local Celebrity", dimensions: '40 x 30 inches'},
+    {url: "https://i.ibb.co/MSDZhmc/lastone.jpg", name: "Local Celebrity", dimensions: '40 x 30 inches'},
     // {url: "https://i.ibb.co/Jzn2dvt/20210612-200823.jpg", name: 'undefined', dimensions: 'undefined'}
   ],
   'No Recess': [
@@ -83,16 +83,16 @@ const drawings = {
 
   ],
   Turtles: [
-    {url: "https://i.ibb.co/sqWDHNk/Untitled-Artwork.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/fQnh0v3/Untitled-Artwork-2.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/3C4CmNt/Untitled-Artwork-3.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/yYXRP9X/Untitled-Artwork-4.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/YhtSSBj/Untitled-Artwork-5.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/B6HT7Sw/Untitled-Artwork-6.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/cxHjs6t/Untitled-Artwork-12.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/Wn01Xcb/Untitled-Artwork-13.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/WV4hWkT/Untitled-Artwork-14.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/7zd28Cy/Untitled-Artwork-17.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/3C4CmNt/Untitled-Artwork-3.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/B6HT7Sw/Untitled-Artwork-6.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/sqWDHNk/Untitled-Artwork.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/Wn01Xcb/Untitled-Artwork-13.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/cxHjs6t/Untitled-Artwork-12.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/yYXRP9X/Untitled-Artwork-4.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/WV4hWkT/Untitled-Artwork-14.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/fQnh0v3/Untitled-Artwork-2.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/9vFZXjw/Untitled-Artwork-1.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/1nT2BcT/Untitled-Artwork-16.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
   ]

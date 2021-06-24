@@ -2,28 +2,27 @@ import React from 'react';
 
 const wrapperCSS = {
   display: 'flex',
-  justifyContent: 'space-between',
+  flexDirection: 'column',
+  alignItems: 'center',
   width: window.innerWidth
 };
 
 const menuCSS = {
+  alignSelf: 'flex-start',
   display: 'flex',
   flexFlow: 'row wrap',
   alignContent: 'flex-start',
   alignItems: 'flex-start',
   justifyContent: 'space-between',
-  width: 0.5 * window.innerWidth,
+  width: 0.4 * window.innerWidth,
   paddingLeft: 0.02 * window.innerWidth,
   paddingRight: 0.02 * window.innerWidth,
-  paddingTop: 0.03 * window.innerWidth,
-  margin: 0,
+  marginBottom: '50px',
 };
 
 const logoCSS = {
-  width: 0.2 * window.innerWidth,
-  height: 0.1 * window.innerWidth,
-  objectFit: 'cover',
-  marginRight: 0.03 * window.innerWidth,
+  fontFamily: 'Helvetica',
+  fontSize: 50,
   cursor: 'pointer'
 };
 
@@ -36,18 +35,19 @@ const buttonCSS = {
   cursor: 'pointer'
 };
 
-const selectedCSS = {
-  // textDecoration: 'solid underline purple 3px',
-  fontWeight: 'bold',
-  border: 0,
-  backgroundColor: 'transparent',
-  fontFamily: 'Verdana',
-  // fontVariant: 'small-caps',
-  fontSize: 28 * window.innerWidth / 1440,
-  cursor: 'pointer'
-};
+// const selectedCSS = {
+//   // textDecoration: 'solid underline purple 3px',
+//   fontWeight: 'bold',
+//   border: 0,
+//   backgroundColor: 'transparent',
+//   fontFamily: 'Verdana',
+//   // fontVariant: 'small-caps',
+//   fontSize: 28 * window.innerWidth / 1440,
+//   cursor: 'pointer'
+// };
+const selectedCSS = buttonCSS;
 
-const logoURL = 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/09/tostitos.jpg?resize=640%2C360&ssl=1';
+const logoURL = 'https://i.ibb.co/prcfbk1/logo.png';
 
 //this.props.changePage(page)
 class Navigation extends React.Component {
@@ -79,13 +79,13 @@ class Navigation extends React.Component {
   render() {
     return (
       <div id="topPanel" style={wrapperCSS}>
+        <p style={logoCSS} onClick={this.logoClick} >Ben Brock</p>
         <div id="Menu" style={menuCSS}>
           <button style={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Paintings</button>
           <button style={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
           <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick}>Videos</button>
           <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
         </div>
-        <img src={logoURL} style={logoCSS} onClick={this.logoClick} />
       </div>
     );
   }
