@@ -23,7 +23,7 @@ const buttonCSS = {
 };
 
 const selectedCSS = {
-  textDecoration: 'solid underline purple 5px',
+  // textDecoration: 'solid underline purple 5px',
   fontWeight: 'bold',
   border: 0,
   backgroundColor: 'transparent',

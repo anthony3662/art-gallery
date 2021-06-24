@@ -37,7 +37,7 @@ const buttonCSS = {
 };
 
 const selectedCSS = {
-  textDecoration: 'solid underline purple 3px',
+  // textDecoration: 'solid underline purple 3px',
   fontWeight: 'bold',
   border: 0,
   backgroundColor: 'transparent',
