@@ -63,7 +63,9 @@ class Gallery extends React.Component {
       }
       collectionDivs.push(
         <div>
-          {/* <h3 style={collectionNameCSS}>{collection}</h3> */}
+          {(collection === 'Enchiridion' || collection === 'Turtles') &&
+            <h3 style={collectionNameCSS}>{collection}</h3>
+          }
           <div className="collectionDiv" style={collectionCSS}>
             {icons}
           </div>
@@ -74,16 +76,19 @@ class Gallery extends React.Component {
 
     var imagesProp = this.props.collections[this.state.expandedCollection];
     var startingProp = this.state.expandedIndex;
+    if (this.state.expandedCollection === 'collection0' || this.state.expandedCollection === 'No Recess' || this.state.expandedCollection === 'For the Sake of Accumulating Facts' || this.state.expandedCollection === 'Sanitarribley') {
+      imagesProp = this.props.collections.collection0;
+      imagesProp.push({url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'});
+      imagesProp.push({url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '20 x 72 inches overall'});
+      imagesProp.push({url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '20 x 72 inches overall'});
+    }
     if (this.state.expandedCollection === 'No Recess') {
-      imagesProp = [{url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '44 x 18 inches overall'}];
-      startingProp = 0;
+      startingProp = imagesProp.length - 3;
     }
     if (this.state.expandedCollection === 'For the Sake of Accumulating Facts') {
-      imagesProp = [{url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '72 x 20 inches overall'}];
-      startingProp = 0;
+      startingProp = imagesProp.length -2;
     }
     if (this.state.expandedCollection === 'Sanitarribley') {
-      imagesProp = [{url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '72 x 20 inches overall'}];
       startingProp = 0;
     }
     return (

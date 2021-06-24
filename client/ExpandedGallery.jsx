@@ -105,7 +105,7 @@ class ExpandedGallery extends React.Component {
   render() {
 
     var left = 0.885 * window.innerWidth;
-    if (this.props.images[0].name === 'No Recess' || this.props.images[0].name === 'For the Sake of Accumulating Facts' || this.props.images[0].name === 'Sanitarribley') {
+    if (this.props.images[this.state.index].name === 'No Recess' || this.props.images[this.state.index].name === 'For the Sake of Accumulating Facts' || this.props.images[this.state.index].name === 'Sanitarribley') {
       left = 0.17 * window.innerWidth;
     }
     const descriptionCSS = {

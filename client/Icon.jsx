@@ -36,7 +36,8 @@ var Icon = function(props) {
     marginTop: 0.01 * window.innerWidth,
     marginBottom: 0.01 * window.innerWidth,
     marginLeft: marginLeft,
-    marginRight: marginRight
+    marginRight: marginRight,
+    cursor: 'pointer'
   };
   return (
     <img style={imgCSS} src={props.image.url} onClick={() => {props.iconClick(props.collection, props.index)}}/>

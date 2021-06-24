@@ -17,8 +17,8 @@ const logoCSS = {
 const buttonCSS = {
   border: 0,
   backgroundColor: 'transparent',
-  fontFamily: 'Chalkduster',
-  fontVariant: 'small-caps',
+  fontFamily: 'Verdana',
+  // fontVariant: 'small-caps',
   fontSize: window.screen.width <= 600 ? 100 : 50,
 };
 
@@ -27,8 +27,8 @@ const selectedCSS = {
   fontWeight: 'bold',
   border: 0,
   backgroundColor: 'transparent',
-  fontFamily: 'Chalkduster',
-  fontVariant: 'small-caps',
+  fontFamily: 'Verdana',
+  // fontVariant: 'small-caps',
   fontSize: window.screen.width <= 600 ? 100 : 50
 };
 
@@ -80,8 +80,8 @@ class MobileNavigation extends React.Component {
         {this.state.expanded &&
           <div id="mobileNavigation" style={menuCSS}>
             <button style={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick} >Paintings</button>
-            <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick} >Videos</button>
             <button style={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
+            <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick} >Videos</button>
             <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
           </div>
         }

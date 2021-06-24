@@ -31,7 +31,7 @@ const buttonCSS = {
   border: 0,
   backgroundColor: 'transparent',
   fontFamily: 'Verdana',
-  fontVariant: 'small-caps',
+  // fontVariant: 'small-caps',
   fontSize: 24 * window.innerWidth / 1440,
   cursor: 'pointer'
 };
@@ -42,7 +42,7 @@ const selectedCSS = {
   border: 0,
   backgroundColor: 'transparent',
   fontFamily: 'Verdana',
-  fontVariant: 'small-caps',
+  // fontVariant: 'small-caps',
   fontSize: 28 * window.innerWidth / 1440,
   cursor: 'pointer'
 };
@@ -81,8 +81,8 @@ class Navigation extends React.Component {
       <div id="topPanel" style={wrapperCSS}>
         <div id="Menu" style={menuCSS}>
           <button style={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Paintings</button>
-          <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick}>Videos</button>
           <button style={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
+          <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick}>Videos</button>
           <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
         </div>
         <img src={logoURL} style={logoCSS} onClick={this.logoClick} />
