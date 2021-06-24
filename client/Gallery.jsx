@@ -74,10 +74,10 @@ class Gallery extends React.Component {
       );
     }
 
-    var imagesProp = this.props.collections[this.state.expandedCollection];
+    var imagesProp = this.props.collections[this.state.expandedCollection] ? JSON.parse(JSON.stringify(this.props.collections[this.state.expandedCollection])) : [];
     var startingProp = this.state.expandedIndex;
     if (this.state.expandedCollection === 'collection0' || this.state.expandedCollection === 'No Recess' || this.state.expandedCollection === 'For the Sake of Accumulating Facts' || this.state.expandedCollection === 'Sanitarribley') {
-      imagesProp = this.props.collections.collection0;
+      imagesProp = this.props.collections.collection0.slice();
       imagesProp.push({url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'});
       imagesProp.push({url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '20 x 72 inches overall'});
       imagesProp.push({url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '20 x 72 inches overall'});
@@ -86,10 +86,10 @@ class Gallery extends React.Component {
       startingProp = imagesProp.length - 3;
     }
     if (this.state.expandedCollection === 'For the Sake of Accumulating Facts') {
-      startingProp = imagesProp.length -2;
+      startingProp = imagesProp.length - 2;
     }
     if (this.state.expandedCollection === 'Sanitarribley') {
-      startingProp = 0;
+      startingProp = imagesProp.length - 1;
     }
     return (
       <div style={wrapperCSS}>
