@@ -61,11 +61,11 @@ const paintings = {
 
 const drawings = {
   Enchiridion: [
-    {url: "https://i.ibb.co/jbZZpTL/resized.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/G0XKpRJ/IMG-8518.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/RCWNbTh/IMG-8515.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/WcTzTJJ/IMG-8527.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/Y09M6FW/IMG-8517.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/G0XKpRJ/IMG-8518.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/jbZZpTL/resized.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/xLSLsq9/IMG-8519.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/C7TmdLY/IMG-8520.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/YdP4253/IMG-8521.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
