@@ -13,6 +13,8 @@ const bodyCSS = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  position: 'relative',
+  width: '100%'
 };
 
 class App extends React.Component {

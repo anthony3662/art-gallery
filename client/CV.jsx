@@ -1,11 +1,13 @@
 import React from 'react';
 
 const cvCSS = {
+  position: 'relative',
   display: 'flex',
   flexDirection: 'column',
   alignSelf: 'flex-start',
-  marginLeft: 0.1 * window.innerWidth
-}
+  // marginLeft: '10%'
+  width: '100%',
+};
 
 const headerCSS = {
   fontFamily: 'Helvetica',
@@ -32,7 +34,8 @@ var CV = function(props) {
   }
   return (
     <div style={cvCSS}>
-      {cvTags}
+      {/* {cvTags} */}
+      <h2 id="comingSoon">Coming Soon</h2>
     </div>
   );
 }

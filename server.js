@@ -19,68 +19,64 @@
 //   ]
 // };
 
-
-
 const paintings = {
   collection0: [
-    {url: "https://i.ibb.co/9nBYQCy/firstone.jpg", name: "Dad's Garage", dimensions: '36 x 36 inches'},
-    {url: 'https://i.ibb.co/0FLvzFm/highquality.jpg', name: "Pilgrim's Progress", dimensions: '30 x 40 inches'},
-    {url: "https://i.ibb.co/3ByGGRh/20210612-183752.jpg", name: "I Caused All my Breakups", dimensions: '40 x 30 inches'},
-    {url: "https://i.ibb.co/qxpq48j/20210612-200528.jpg", name: 'Ghosted While Dating', dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/d54pH7C/20210612-191705.jpg", name: "Camel Castle", dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/RznXn5c/20210612-193102.jpg", name: "I Shouldn't Have To", dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/TRx0dgb/20210612-194229.jpg", name: 'Redirection', dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/P1qRwsk/20210612-193904.jpg", name: 'Find Stuff to Do', dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/5TwchNK/20210612-193649.jpg", name: "Paid to Party", dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/Xb3Cmpv/20210612-194419.jpg", name: 'If Only to Live in Your Memory', dimensions: '18 x 14 inches'},
-    {url: "https://i.ibb.co/BgbL2Xq/20210612-195023.jpg", name: 'Celtic Woman, Celtic Man', dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/0CCRw3C/20210612-194852.jpg", name: 'Antebellum Dream Look', dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/5YPf3Ch/20210612-195750.jpg", name: 'Celestial Flesh', dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/6Bz6Q2D/20210612-185250.jpg", name: "Pulling Back", dimensions: '30 x 24 inches'},
-    {url: "https://i.ibb.co/MSDZhmc/lastone.jpg", name: "Local Celebrity", dimensions: '40 x 30 inches'},
-    // {url: "https://i.ibb.co/Jzn2dvt/20210612-200823.jpg", name: 'undefined', dimensions: 'undefined'}
+    {url: "https://i.ibb.co/9nBYQCy/firstone.jpg", name: "Dad's Garage , Acrylic on Canvas 2020", dimensions: '36 x 36 inches'},
+    {url: "https://i.ibb.co/TRx0dgb/20210612-194229.jpg", name: 'Redirection , Acrylic on Canvas 2020', dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/3ByGGRh/20210612-183752.jpg", name: "I Caused All my Breakups , Acrylic on Canvas 2020", dimensions: '40 x 30 inches'},
+    {url: "https://i.ibb.co/d54pH7C/20210612-191705.jpg", name: "Camel Castle , Acrylic on Canvas 2020", dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/RznXn5c/20210612-193102.jpg", name: "I Shouldn't Have To , Acrylic on Canvas 2020", dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/MSDZhmc/lastone.jpg", name: "Local Celebrity , Acrylic on Canvas 2020", dimensions: '40 x 30 inches'},
+    {url: 'https://i.ibb.co/0FLvzFm/highquality.jpg', name: "Pilgrim's Progress , Acrylic on Canvas 2020", dimensions: '30 x 40 inches'},
+    {url: "https://i.ibb.co/sq3Swd1/20210628-133031.jpg", name: 'Find Stuff to Do , Acrylic on Canvas 2020', dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/LQm2nGN/20210628-134815.jpg", name: "Paid to Party , Acrylic on Canvas 2020", dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/Xb3Cmpv/20210612-194419.jpg", name: 'If Only to Live in Your Memory , Acrylic on Canvas 2020', dimensions: '18 x 14 inches'},
+    {url: "https://i.ibb.co/BwySFVH/20210628-132810.jpg", name: 'Celtic Woman, Celtic Man , Acrylic on Canvas 2020', dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/0CCRw3C/20210612-194852.jpg", name: 'Antebellum Dream Look , Acrylic on Canvas 2020', dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/5YPf3Ch/20210612-195750.jpg", name: 'Celestial Flesh , Acrylic on Canvas 2020', dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/n3WTYR9/20210628-135317.jpg", name: "Pulling Back , Acrylic on Canvas 2020", dimensions: '30 x 24 inches'},
+    {url: "https://i.ibb.co/qxpq48j/20210612-200528.jpg", name: 'Ghosted While Dating , Acrylic on Canvas 2020', dimensions: '18 x 20 inches'},
+    // {url: "https://i.ibb.co/Jzn2dvt/20210612-200823.jpg", name: 'undefined , Acrylic on Canvas 2020", dimensions: 'undefined'}
   ],
   'No Recess': [
     {url: 'https://i.ibb.co/m0DR4MT/cobainsmall.png'},
     {url: "https://i.ibb.co/98kVfzp/20210612-190410.jpg"},
     {url: 'https://i.ibb.co/cC64YTK/cobain-Square.png'},
   ],
-  'For the Sake of Accumulating Facts': [
-    {url: "https://i.ibb.co/Hd212f2/facts0.png"},
-    {url: "https://i.ibb.co/mGgDxbf/facts1.png"},
-    {url: "https://i.ibb.co/z2VvQHf/facts2.png"},
-    {url: "https://i.ibb.co/1Tzfmsb/facts3.png"},
-  ],
-  Sanitarribley: [
-    {url: "https://i.ibb.co/C0S2QbK/sani0.png"},
-    {url: "https://i.ibb.co/TKQZ7TQ/sani1.png"},
-    {url: "https://i.ibb.co/RCk0nm9/sani2.png"},
-    {url: "https://i.ibb.co/bmdFYLw/sani3.png"},
-  ]
+  // 'For the Sake of Accumulating Facts': [
+  //   {url: "https://i.ibb.co/Hd212f2/facts0.png"},
+  //   {url: "https://i.ibb.co/mGgDxbf/facts1.png"},
+  //   {url: "https://i.ibb.co/z2VvQHf/facts2.png"},
+  //   {url: "https://i.ibb.co/1Tzfmsb/facts3.png"},
+  // ],
+  // Sanitarribley: [
+  //   {url: "https://i.ibb.co/C0S2QbK/sani0.png"},
+  //   {url: "https://i.ibb.co/TKQZ7TQ/sani1.png"},
+  //   {url: "https://i.ibb.co/RCk0nm9/sani2.png"},
+  //   {url: "https://i.ibb.co/bmdFYLw/sani3.png"},
+  // ]
 };
 
 const drawings = {
   Enchiridion: [
-    {url: "https://i.ibb.co/G0XKpRJ/IMG-8518.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/RCWNbTh/IMG-8515.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/WcTzTJJ/IMG-8527.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/Y09M6FW/IMG-8517.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/jbZZpTL/resized.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/xLSLsq9/IMG-8519.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/C7TmdLY/IMG-8520.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/YdP4253/IMG-8521.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/6XBMQG7/IMG-8522.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/JKv9VLw/IMG-8523.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/QPKpmV0/IMG-8524.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/HXWWh53/IMG-8525.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/Wc5jCgj/IMG-8526.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/FXj18FH/IMG-8516.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/z8vKtqq/IMG-8528.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/9VJ5MdK/IMG-8529.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/2YSdrbb/IMG-8530.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/zbTfWjJ/Untitled-Artwork-11.png", name: "Untitled 2019", dimensions: '16 x 16 inches'},
-
-
+    {url: "https://i.ibb.co/G0XKpRJ/IMG-8518.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/RCWNbTh/IMG-8515.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/WcTzTJJ/IMG-8527.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/Y09M6FW/IMG-8517.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/jbZZpTL/resized.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/xLSLsq9/IMG-8519.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/C7TmdLY/IMG-8520.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/YdP4253/IMG-8521.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/6XBMQG7/IMG-8522.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/JKv9VLw/IMG-8523.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/QPKpmV0/IMG-8524.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/HXWWh53/IMG-8525.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/Wc5jCgj/IMG-8526.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/FXj18FH/IMG-8516.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/z8vKtqq/IMG-8528.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/9VJ5MdK/IMG-8529.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/2YSdrbb/IMG-8530.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/zbTfWjJ/Untitled-Artwork-11.png", name: "Untitled 2020", dimensions: '16 x 16 inches'}
   ],
   Turtles: [
     {url: "https://i.ibb.co/YhtSSBj/Untitled-Artwork-5.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},

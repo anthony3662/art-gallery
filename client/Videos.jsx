@@ -20,10 +20,10 @@ class Videos extends React.Component {
   render() {
     return (
       <div style={wrapperCSS}>
-        {this.props.videos.map(url =>
+        {/* {this.props.videos.map(url =>
           <iframe src={url} width={WIDTH} height={HEIGHT} style={videoCSS} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
-        )}
-
+        )} */}
+        <h2 id="comingSoon">Coming Soon</h2>
       </div>
     );
   }
