@@ -55,10 +55,10 @@ class ExpandedGallery extends React.Component {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
         /* left swipe */
-          this.cycleLeft();
+          this.cycleRight();
         } else {
         /* right swipe */
-          this.cycleRight();
+          this.cycleLeft();
         }
     } else {
         if ( yDiff > 0 ) {
