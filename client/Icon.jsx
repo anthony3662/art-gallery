@@ -29,14 +29,9 @@ var Icon = function(props) {
   // }
   var imgCSS = {
     position: 'relative',
-    // left: left,
-    width: isMobile ? '80%' : '35%' ,
-    // height: isMobile ? 0.30 * window.innerWidth : computerHeight,
+    width: isMobile ? '80%' : '65vh' ,
     objectFit: 'contain',
     marginBottom: '10%',
-
-    // marginLeft: marginLeft,
-    // marginRight: marginRight,
     cursor: 'pointer'
   };
   return (

@@ -25,7 +25,7 @@ const collectionCSS = {
 };
 
 const collectionNameCSS = {
-  marginLeft: 0.1 * window.innerWidth,
+  marginLeft: '10%',
   fontFamily: 'Helvetica',
   fontWeight: '100',
   fontSize: window.screen.width <= 600 ? 60 : 25
