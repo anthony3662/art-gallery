@@ -36,13 +36,14 @@ const paintings = {
     {url: "https://i.ibb.co/5YPf3Ch/20210612-195750.jpg", name: 'Celestial Flesh , Acrylic on Canvas 2020', dimensions: '18 x 20 inches'},
     {url: "https://i.ibb.co/n3WTYR9/20210628-135317.jpg", name: "Pulling Back , Acrylic on Canvas 2020", dimensions: '30 x 24 inches'},
     {url: "https://i.ibb.co/qxpq48j/20210612-200528.jpg", name: 'Ghosted While Dating , Acrylic on Canvas 2020', dimensions: '18 x 20 inches'},
+    {url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'}
     // {url: "https://i.ibb.co/Jzn2dvt/20210612-200823.jpg", name: 'undefined , Acrylic on Canvas 2020", dimensions: 'undefined'}
   ],
-  'No Recess': [
-    {url: 'https://i.ibb.co/m0DR4MT/cobainsmall.png'},
-    {url: "https://i.ibb.co/98kVfzp/20210612-190410.jpg"},
-    {url: 'https://i.ibb.co/cC64YTK/cobain-Square.png'},
-  ],
+  // 'No Recess': [
+  //   {url: 'https://i.ibb.co/m0DR4MT/cobainsmall.png'},
+  //   {url: "https://i.ibb.co/98kVfzp/20210612-190410.jpg"},
+  //   {url: 'https://i.ibb.co/cC64YTK/cobain-Square.png'},
+  // ],
   // 'For the Sake of Accumulating Facts': [
   //   {url: "https://i.ibb.co/Hd212f2/facts0.png"},
   //   {url: "https://i.ibb.co/mGgDxbf/facts1.png"},

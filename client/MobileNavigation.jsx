@@ -10,8 +10,10 @@ const wrapperCSS = {
 
 const logoCSS = {
   fontFamily: 'Helvetica',
-  fontSize: 100,
-  cursor: 'pointer'
+  fontSize: '16vw',
+  cursor: 'pointer',
+  marginTop: '2vh',
+  marginBottom: '2vh'
 };
 
 const buttonCSS = {
@@ -19,9 +21,16 @@ const buttonCSS = {
   backgroundColor: 'transparent',
   fontFamily: 'Verdana',
   // fontVariant: 'small-caps',
-  fontSize: window.screen.width <= 600 ? 100 : 50,
+  fontSize: '8vw'
 };
 
+const toggleButtonCSS = {
+  border: 0,
+  backgroundColor: 'transparent',
+  fontFamily: 'Verdana',
+  // fontVariant: 'small-caps',
+  fontSize: '12vw'
+};
 // const selectedCSS = {
 //   // textDecoration: 'solid underline purple 5px',
 //   fontWeight: 'bold',
@@ -79,7 +88,8 @@ class MobileNavigation extends React.Component {
   render() {
     return (
       <div style={wrapperCSS}>
-        <button style={buttonCSS} onClick={this.toggleMenu} >Menu</button>
+        <p style={logoCSS} onClick={this.logoClick} >Ben Brock</p>
+        <button style={toggleButtonCSS} onClick={this.toggleMenu} >Menu</button>
         {this.state.expanded &&
           <div id="mobileNavigation" style={menuCSS}>
             <button style={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick} >Paintings</button>
@@ -88,7 +98,6 @@ class MobileNavigation extends React.Component {
             <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
           </div>
         }
-        <p style={logoCSS} onClick={this.logoClick} >Ben Brock</p>
       </div>
     );
   }

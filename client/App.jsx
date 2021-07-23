@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-const isMobile = window.screen.width <= 600 || window.innerWidth <= 600;
+const isMobile = window.screen.width <= 600;
 
 import Navigation from './Navigation.jsx';
 import MobileNavigation from './MobileNavigation.jsx';

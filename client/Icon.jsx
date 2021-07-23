@@ -29,7 +29,7 @@ var Icon = function(props) {
   // }
   var imgCSS = {
     position: 'relative',
-    width: isMobile ? '80%' : '65vh' ,
+    width: isMobile ? '80%' : (props.image.url === 'https://i.ibb.co/68hQwgt/cobainrow.png' ? '80vw' : '65vh') ,
     objectFit: 'contain',
     marginBottom: '10%',
     cursor: 'pointer'

@@ -26,9 +26,10 @@ const collectionCSS = {
 
 const collectionNameCSS = {
   marginLeft: '10%',
-  fontFamily: 'Helvetica',
+  fontFamily: 'Verdana',
+  textTransform: 'uppercase',
   fontWeight: '100',
-  fontSize: window.screen.width <= 600 ? 60 : 25
+  fontSize: isMobile ? '6vw' : '1.5vw'
 }
 
 class Gallery extends React.Component {
@@ -80,15 +81,15 @@ class Gallery extends React.Component {
 
     var imagesProp = this.props.collections[this.state.expandedCollection] ? JSON.parse(JSON.stringify(this.props.collections[this.state.expandedCollection])) : [];
     var startingProp = this.state.expandedIndex;
-    if (this.state.expandedCollection === 'collection0' || this.state.expandedCollection === 'No Recess') {
-      imagesProp = this.props.collections.collection0.slice();
-      imagesProp.push({url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'});
-      // imagesProp.push({url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '20 x 72 inches overall'});
-      // imagesProp.push({url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '20 x 72 inches overall'});
-    }
-    if (this.state.expandedCollection === 'No Recess') {
-      startingProp = imagesProp.length - 1;
-    }
+    // if (this.state.expandedCollection === 'collection0' || this.state.expandedCollection === 'No Recess') {
+    //   imagesProp = this.props.collections.collection0.slice();
+    //   imagesProp.push({url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'});
+    //   // imagesProp.push({url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '20 x 72 inches overall'});
+    //   // imagesProp.push({url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '20 x 72 inches overall'});
+    // }
+    // if (this.state.expandedCollection === 'No Recess') {
+    //   startingProp = imagesProp.length - 1;
+    // }
     // if (this.state.expandedCollection === 'For the Sake of Accumulating Facts') {
     //   startingProp = imagesProp.length - 2;
     // }

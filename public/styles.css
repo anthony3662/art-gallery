@@ -31,7 +31,7 @@ body {
 }
 #logo {
   font-family: Helvetica;
-  font-size: xxx-large;
+  font-size: 4.5vw;
   cursor: pointer;
 }
 .buttonCSS {
@@ -39,7 +39,7 @@ body {
   background-color: transparent;
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   cursor: pointer;
   border: 0;
   color: #555555;
@@ -49,7 +49,7 @@ body {
   background-color: transparent;
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   cursor: pointer;
   border: 0;
   color: #555555;
