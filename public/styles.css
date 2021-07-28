@@ -70,3 +70,12 @@ body {
   align-self: center;
   justify-self: center;
 }
+.contactLabel {
+  font-family: Verdana;
+  font-weight: 400;
+  color: #555555;
+}
+.contactRow {
+  display: flex;
+  align-items: center;
+}

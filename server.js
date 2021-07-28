@@ -66,10 +66,10 @@ const drawings = {
     {url: "https://i.ibb.co/Y09M6FW/IMG-8517.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/jbZZpTL/resized.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/xLSLsq9/IMG-8519.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/C7TmdLY/IMG-8520.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    // {url: "https://i.ibb.co/C7TmdLY/IMG-8520.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/YdP4253/IMG-8521.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/6XBMQG7/IMG-8522.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/JKv9VLw/IMG-8523.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    // {url: "https://i.ibb.co/JKv9VLw/IMG-8523.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/QPKpmV0/IMG-8524.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/HXWWh53/IMG-8525.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/Wc5jCgj/IMG-8526.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
@@ -77,28 +77,26 @@ const drawings = {
     {url: "https://i.ibb.co/z8vKtqq/IMG-8528.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/9VJ5MdK/IMG-8529.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
     {url: "https://i.ibb.co/2YSdrbb/IMG-8530.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/zbTfWjJ/Untitled-Artwork-11.png", name: "Untitled 2020", dimensions: '16 x 16 inches'}
+    // {url: "https://i.ibb.co/zbTfWjJ/Untitled-Artwork-11.png", name: "Untitled 2020", dimensions: '16 x 16 inches'}
   ],
   Turtles: [
-    {url: "https://i.ibb.co/YhtSSBj/Untitled-Artwork-5.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/7zd28Cy/Untitled-Artwork-17.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/3C4CmNt/Untitled-Artwork-3.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/B6HT7Sw/Untitled-Artwork-6.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/sqWDHNk/Untitled-Artwork.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/Wn01Xcb/Untitled-Artwork-13.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/cxHjs6t/Untitled-Artwork-12.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/yYXRP9X/Untitled-Artwork-4.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/WV4hWkT/Untitled-Artwork-14.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/fQnh0v3/Untitled-Artwork-2.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/9vFZXjw/Untitled-Artwork-1.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
-    {url: "https://i.ibb.co/1nT2BcT/Untitled-Artwork-16.png", name: "Untitled 2018", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/YhtSSBj/Untitled-Artwork-5.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/7zd28Cy/Untitled-Artwork-17.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/3C4CmNt/Untitled-Artwork-3.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/B6HT7Sw/Untitled-Artwork-6.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/sqWDHNk/Untitled-Artwork.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/Wn01Xcb/Untitled-Artwork-13.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/cxHjs6t/Untitled-Artwork-12.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/yYXRP9X/Untitled-Artwork-4.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/WV4hWkT/Untitled-Artwork-14.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/fQnh0v3/Untitled-Artwork-2.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/9vFZXjw/Untitled-Artwork-1.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
+    {url: "https://i.ibb.co/1nT2BcT/Untitled-Artwork-16.png", name: "Untitled 2020", dimensions: '16 x 16 inches'},
   ]
 };
 
 const videos = [
-  'https://player.vimeo.com/video/215774222',
-  'https://player.vimeo.com/video/215774222',
-  'https://player.vimeo.com/video/373154046'
+  'https://www.youtu.be/1UjhSJF6Rdw?rel=0'
 ];
 
 const cv = {

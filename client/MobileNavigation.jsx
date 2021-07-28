@@ -94,8 +94,8 @@ class MobileNavigation extends React.Component {
           <div id="mobileNavigation" style={menuCSS}>
             <button style={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick} >Paintings</button>
             <button style={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
-            <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick} >Videos</button>
-            <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
+            <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick} >Video</button>
+            <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>Contact</button>
           </div>
         }
       </div>

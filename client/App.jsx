@@ -143,10 +143,10 @@ class App extends React.Component {
         {this.state.dataReceived && this.state.page === 'Drawings' &&
           <Gallery collections={this.state.drawings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }
-        {this.state.dataReceived && this.state.page === 'Videos' &&
+        {this.state.dataReceived && this.state.page === 'Video' &&
           <Videos videos={this.state.videos}/>
         }
-        {this.state.dataReceived && this.state.page === 'CV' &&
+        {this.state.dataReceived && this.state.page === 'Contact' &&
           <CV text={this.state.cv}/>
         }
       </div>

@@ -39,8 +39,8 @@ class Navigation extends React.Component {
         <div id="menu">
           <button class={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Paintings</button>
           <button class={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
-          <button class={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick}>Videos</button>
-          <button class={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>CV</button>
+          <button class={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick}>Video</button>
+          <button class={this.state.page === 'Contact' ? selectedCSS : buttonCSS} onClick={this._onClick}>Contact</button>
         </div>
       </div>
     );

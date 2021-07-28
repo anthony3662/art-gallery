@@ -3,16 +3,18 @@ import React from 'react';
 const wrapperCSS = {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center'
+  alignItems: 'center',
+  width: '100%'
 };
 
 const videoCSS = {
-  marginTop: 0.05 * window.innerHeight,
-  marginBottom: 0.05 * window.innerHeight,
+  marginTop: '5vh',
+  marginBottom: '5vh',
+  width: window.screen.width <= 600 ? '100vw' : '100vh',
+  height: window.screen.width <= 600 ? '42vw' : '42vh'
 };
 
-const WIDTH = window.innerWidth < 640 ? window.innerWidth : 640;
-const HEIGHT = ( 9 / 16 * WIDTH) < 360 ? (9 / 16 * WIDTH) : 360;
+
 class Videos extends React.Component {
   constructor(props){
     super(props);
@@ -20,10 +22,10 @@ class Videos extends React.Component {
   render() {
     return (
       <div style={wrapperCSS}>
-        {/* {this.props.videos.map(url =>
-          <iframe src={url} width={WIDTH} height={HEIGHT} style={videoCSS} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
-        )} */}
-        <h2 id="comingSoon">Coming Soon</h2>
+        {this.props.videos.map(url =>
+        <iframe style={videoCSS} src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        )}
+        {/* <h2 id="comingSoon">Coming Soon</h2> */}
       </div>
     );
   }
