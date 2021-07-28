@@ -96,7 +96,7 @@ const drawings = {
 };
 
 const videos = [
-  'https://www.youtu.be/1UjhSJF6Rdw?rel=0'
+  'https://www.youtube.com/embed/1UjhSJF6Rdw?rel=0'
 ];
 
 const cv = {
