@@ -100,13 +100,16 @@ class ExpandedGallery extends React.Component {
 
   render() {
 
-    const descriptionCSS = {
+    var descriptionCSS = {
       position: 'relative',
       zIndex: 3,
       fontFamily: 'Verdana',
       textAlign: 'center',
       color: '#444444'
     };
+    if (isMobile) {
+      descriptionCSS.fontSize = '2.6vw';
+    }
     return (
       <div id="focusDiv">
         <img style={imageCSS} src={this.props.images[this.state.index].url} onClick={this._onClick}/>
