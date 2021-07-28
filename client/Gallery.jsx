@@ -29,7 +29,8 @@ const collectionNameCSS = {
   fontFamily: 'Verdana',
   textTransform: 'uppercase',
   fontWeight: '100',
-  fontSize: isMobile ? '6vw' : '1.5vw'
+  fontSize: isMobile ? '6vw' : '1.4vw',
+  color: '#555555'
 }
 
 class Gallery extends React.Component {
