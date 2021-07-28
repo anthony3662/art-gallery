@@ -23,7 +23,7 @@ class Videos extends React.Component {
     return (
       <div style={wrapperCSS}>
         {this.props.videos.map(url =>
-        <iframe style={videoCSS} src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe style={videoCSS} src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen" allowfullscreen="allowfullscreen"></iframe>
         )}
         {/* <h2 id="comingSoon">Coming Soon</h2> */}
       </div>
