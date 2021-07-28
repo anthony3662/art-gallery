@@ -16,7 +16,7 @@ body {
   align-items: center;
   width: 100%
 }
-#menu {
+.menu {
   position: relative;
   align-self: flex-start;
   display: flex;
@@ -27,32 +27,54 @@ body {
   width: 40%;
   padding-left: 2%;
   padding-right: 2%;
-  margin-bottom: 6%
+  margin-bottom: 6%;
 }
-#logo {
+.mobileMenu {
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 6%;
+}
+.logo {
   font-family: Helvetica;
-  font-size: 4.5vw;
+  font-size: 3.8vw;
   cursor: pointer;
+}
+.mobileLogo {
+  font-size: 6vw;
 }
 .buttonCSS {
   position: relative;
   background-color: transparent;
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 1.40vw;
   cursor: pointer;
   border: 0;
   color: #555555;
+  font-size: 1.40vw;
+}
+.mobileButton {
+  font-size: 2.5vw;
 }
 .selectedCSS {
   position: relative;
   background-color: transparent;
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 1.4vw;
   cursor: pointer;
   border: 0;
   color: #555555;
+  font-size: 1.40vw;
+}
+.mobileSelected {
+  font-size: 2.5vw;
 }
 #focusDiv {
   position: fixed;

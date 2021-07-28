@@ -131,12 +131,12 @@ class App extends React.Component {
   render() {
     return (
       <div style={bodyCSS}>
-        {!isMobile && !this.state.expanded &&
+        {!this.state.expanded &&
           <Navigation changePage={this.changePage}/>
         }
-        {isMobile && !this.state.expanded &&
+        {/* {isMobile && !this.state.expanded &&
           <MobileNavigation changePage={this.changePage}/>
-        }
+        } */}
         {this.state.dataReceived && this.state.page === 'Paintings' &&
           <Gallery collections={this.state.paintings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }

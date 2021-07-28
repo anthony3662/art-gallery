@@ -31,12 +31,12 @@ class Navigation extends React.Component {
   }
 
   render() {
-    var selectedCSS = 'selectedCSS';
-    var buttonCSS = 'buttonCSS';
+    var selectedCSS = window.screen.width <= 600 ? 'mobileSelected selectedCSS' : 'selectedCSS';
+    var buttonCSS = window.screen.width <= 600 ? 'mobileButton buttonCSS' : 'buttonCSS';
     return (
       <div id="topPanel">
-        <p id="logo" onClick={this.logoClick} >Ben Brock</p>
-        <div id="menu">
+        <p className={window.screen.width <=600 ? 'mobileLogo logo' : 'logo'} onClick={this.logoClick} >Ben Brock</p>
+        <div class={window.screen.width <= 600 ? 'mobileMenu' : 'menu'}>
           <button class={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Paintings</button>
           <button class={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
           <button class={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick}>Video</button>
