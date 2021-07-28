@@ -53,10 +53,10 @@ class ExpandedGallery extends React.Component {
     var yDiff = this.yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
+        if ( xDiff > 30 ) {
         /* left swipe */
           this.cycleRight();
-        } else {
+        } else if (xDiff < -30) {
         /* right swipe */
           this.cycleLeft();
         }
@@ -73,6 +73,7 @@ class ExpandedGallery extends React.Component {
   };
 
   _onClick(e) {
+    if (isMobile) return;
     if (e.clientX < window.innerWidth * 0.5) {
       this.cycleLeft();
     } else {
