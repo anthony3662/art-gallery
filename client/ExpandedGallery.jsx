@@ -10,10 +10,10 @@ const imageCSS = {
 
 const closeCSS = {
   position: 'fixed',
-  top: '3%',
-  left: '95%',
-  width: '5%',
-  height: '5%'
+  top: '0%',
+  left: isMobile ? '91%' : '95%',
+  width: isMobile ? '9%' : '5%',
+  height: isMobile ? '9%' :'5%'
 };
 
 class ExpandedGallery extends React.Component {
