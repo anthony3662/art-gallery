@@ -18,7 +18,8 @@ const closeCSS = {
   top: '0%',
   left: isMobile ? '91%' : '95%',
   width: isMobile ? '9%' : '5%',
-  height: isMobile ? '9%' :'5%'
+  height: isMobile ? '9%' :'5%',
+  cursor: 'pointer'
 };
 
 class ExpandedGallery extends React.Component {
