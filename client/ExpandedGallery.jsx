@@ -4,8 +4,13 @@ const isMobile = window.screen.width <= 600;
 
 const imageCSS = {
   position: 'relative',
-  height: '90%',
-  objectFit: 'contain'
+  height: '92%',
+  width: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  margin: 0,
+  // objectFit: 'contain'
 };
 
 const closeCSS = {
@@ -53,10 +58,10 @@ class ExpandedGallery extends React.Component {
     var yDiff = this.yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 30 ) {
+        if ( xDiff > 20 ) {
         /* left swipe */
           this.cycleRight();
-        } else if (xDiff < -30) {
+        } else if (xDiff < -20) {
         /* right swipe */
           this.cycleLeft();
         }
@@ -105,19 +110,33 @@ class ExpandedGallery extends React.Component {
       position: 'relative',
       zIndex: 3,
       fontFamily: 'Verdana',
-      textAlign: 'center',
-      color: '#444444'
+      textAlign: window.screen.width < window.screen.height ? 'left' : 'center',
+      margin: window.screen.width < window.screen.height ? '2% 0 0 2%' : '1% 0 3% 0',
+      color: '#555555'
     };
     if (isMobile) {
       descriptionCSS.fontSize = '2.6vw';
     }
     return (
       <div id="focusDiv">
-        <img style={imageCSS} src={this.props.images[this.state.index].url} onClick={this._onClick}/>
-        <svg id="expandedGalleryClose" style={closeCSS} onClick={this.props.close} data-name="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><path d="M72 11.77L60.23 0 36 24.23 11.77 0 0 11.77 24.23 36 0 60.23 11.77 72 36 47.77 60.23 72 72 60.23 47.77 36 72 11.77z"/></svg>
-        <p style={descriptionCSS}>
-          {this.props.images[this.state.index].name + ', ' + this.props.images[this.state.index].dimensions}
-        </p>
+        <figure style={imageCSS}>
+          <img style={{objectFit: 'contain', maxWidth: '100%', maxHeight: '100%'}} src={this.props.images[this.state.index].url} onClick={this._onClick}/>
+          <figcaption style={descriptionCSS}>
+            {this.props.images[this.state.index].name + ', ' + this.props.images[this.state.index].dimensions + '.'}
+          </figcaption>
+        </figure>
+        {/* <svg id="expandedGalleryClose" style={closeCSS} onClick={this.props.close} data-name="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><path d="M72 11.77L60.23 0 36 24.23 11.77 0 0 11.77 24.23 36 0 60.23 11.77 72 36 47.77 60.23 72 72 60.23 47.77 36 72 11.77z"/></svg> */}
+        <svg id="expandedGalleryClose" style={closeCSS} onClick={this.props.close} data-name="close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512.02 512.02">
+            <path fill="#CCCCCC" d="M468.214,512.02c-11.208,0-22.408-4.28-30.96-12.832L12.838,74.756
+              c-17.104-17.104-17.104-44.84,0-61.928c17.104-17.104,44.816-17.104,61.928,0L499.182,437.26c17.104,17.104,17.104,44.84,0,61.928
+              C490.622,507.74,479.414,512.02,468.214,512.02z"/>
+            <path fill="#CCCCCC" d="M43.798,512.02c-11.208,0-22.408-4.28-30.96-12.832c-17.104-17.088-17.104-44.816,0-61.928
+              L437.254,12.836c17.104-17.104,44.816-17.104,61.928,0c17.104,17.088,17.104,44.816,0,61.928L74.758,499.188
+              C66.206,507.74,55.006,512.02,43.798,512.02z"/>
+        </svg>
+        {/* <p style={descriptionCSS}>
+        </p> */}
       </div>
     );
   }

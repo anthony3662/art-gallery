@@ -59,7 +59,7 @@ class MobileNavigation extends React.Component {
     this.logoClick = this.logoClick.bind(this);
 
     this.state = {
-      page: 'Paintings',
+      page: 'Painting',
       expanded: false
     };
   }
@@ -80,9 +80,9 @@ class MobileNavigation extends React.Component {
 
   logoClick() {
     this.setState({
-      page: 'Paintings'
+      page: 'Painting'
     });
-    this.props.changePage('Paintings');
+    this.props.changePage('Painting');
   }
 
   render() {
@@ -92,10 +92,10 @@ class MobileNavigation extends React.Component {
         <button style={toggleButtonCSS} onClick={this.toggleMenu} >Menu</button>
         {this.state.expanded &&
           <div id="mobileNavigation" style={menuCSS}>
-            <button style={this.state.page === 'Paintings' ? selectedCSS : buttonCSS} onClick={this._onClick} >Paintings</button>
-            <button style={this.state.page === 'Drawings' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawings</button>
-            <button style={this.state.page === 'Videos' ? selectedCSS : buttonCSS} onClick={this._onClick} >Video</button>
-            <button style={this.state.page === 'CV' ? selectedCSS : buttonCSS} onClick={this._onClick}>Contact</button>
+            <button style={this.state.page === 'Painting' ? selectedCSS : buttonCSS} onClick={this._onClick} >Painting</button>
+            <button style={this.state.page === 'Drawing' ? selectedCSS : buttonCSS} onClick={this._onClick}>Drawing</button>
+            <button style={this.state.page === 'Video' ? selectedCSS : buttonCSS} onClick={this._onClick} >Video</button>
+            <button style={this.state.page === 'Social' ? selectedCSS : buttonCSS} onClick={this._onClick}>Contact</button>
           </div>
         }
       </div>

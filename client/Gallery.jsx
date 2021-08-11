@@ -84,9 +84,9 @@ class Gallery extends React.Component {
     var startingProp = this.state.expandedIndex;
     // if (this.state.expandedCollection === 'collection0' || this.state.expandedCollection === 'No Recess') {
     //   imagesProp = this.props.collections.collection0.slice();
-    //   imagesProp.push({url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'});
-    //   // imagesProp.push({url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '20 x 72 inches overall'});
-    //   // imagesProp.push({url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '20 x 72 inches overall'});
+    //   imagesProp.push({url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches. overall'});
+    //   // imagesProp.push({url: 'https://i.ibb.co/d5zhTBQ/factsAll.png', name: 'For the Sake of Accumulating Facts', dimensions: '20 x 72 inches. overall'});
+    //   // imagesProp.push({url: 'https://i.ibb.co/3dvtkbh/saniAll.png', name: 'Sanitarribley', dimensions: '20 x 72 inches. overall'});
     // }
     // if (this.state.expandedCollection === 'No Recess') {
     //   startingProp = imagesProp.length - 1;

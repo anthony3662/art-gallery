@@ -30,7 +30,7 @@ class App extends React.Component {
     this.closeGallery = this.closeGallery.bind(this);
 
     this.state = {
-      page: 'Paintings',
+      page: 'Painting',
       dataReceived: false,
       expanded: false,
 
@@ -137,16 +137,16 @@ class App extends React.Component {
         {/* {isMobile && !this.state.expanded &&
           <MobileNavigation changePage={this.changePage}/>
         } */}
-        {this.state.dataReceived && this.state.page === 'Paintings' &&
+        {this.state.dataReceived && this.state.page === 'Painting' &&
           <Gallery collections={this.state.paintings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }
-        {this.state.dataReceived && this.state.page === 'Drawings' &&
+        {this.state.dataReceived && this.state.page === 'Drawing' &&
           <Gallery collections={this.state.drawings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }
         {this.state.dataReceived && this.state.page === 'Video' &&
           <Videos videos={this.state.videos}/>
         }
-        {this.state.dataReceived && this.state.page === 'Contact' &&
+        {this.state.dataReceived && this.state.page === 'Social' &&
           <CV text={this.state.cv}/>
         }
       </div>
