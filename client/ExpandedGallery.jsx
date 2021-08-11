@@ -16,9 +16,12 @@ const imageCSS = {
 const closeCSS = {
   position: 'fixed',
   top: '0%',
-  left: isMobile ? '91%' : '95%',
-  width: isMobile ? '9%' : '5%',
-  height: isMobile ? '9%' :'5%',
+  // left: isMobile ? '91%' : '95%',
+  // width: isMobile ? '9%' : '5%',
+  // height: isMobile ? '9%' :'5%',
+  left: '95%',
+  width: '5%',
+  height: '5%',
   cursor: 'pointer'
 };
 
