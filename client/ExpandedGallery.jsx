@@ -29,7 +29,7 @@ const leftCSS = {
   position: 'fixed',
   width: '5%',
   height: '5%',
-  top: '47.5%',
+  top: '43.5%', //centers on image w/ height 92%, 92/2 - 2.5
   left: '5%',
   transform: 'rotate(180deg)',
   cursor: 'pointer'
@@ -40,7 +40,7 @@ const rightCSS = {
   position: 'fixed',
   width: '5%',
   height: '5%',
-  top: '47.5%',
+  top: '43.5%',
   left: '90%',
   cursor: 'pointer'
 
