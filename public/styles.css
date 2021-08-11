@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Chalkduster';
-  src: url('Chalkduster.woff2') format('woff2'),
-      url('Chalkduster.woff') format('woff');
+  font-family: 'HelveticaNeue';
+  src: url('helvetica-neue-regular') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,16 +8,22 @@
 body {
   background-color: #eeeeee;
 }
-#topPanel {
+.topPanel {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%
+  width: 100%;
+  margin-bottom: 3%;
+}
+.topPanelDesktop {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
 }
 .menu {
   position: relative;
-  align-self: flex-start;
+  align-self: center;
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
@@ -27,7 +32,6 @@ body {
   width: 40%;
   padding-left: 2%;
   padding-right: 2%;
-  margin-bottom: 6%;
 }
 .mobileMenu {
   position: relative;
@@ -38,17 +42,24 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 90%;
+  margin-top: 0%;
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 6%;
 }
 .logo {
-  font-family: Helvetica;
+  position: relative;
+  font-family: HelveticaNeue;
   font-size: 3.8vw;
   cursor: pointer;
+  font-weight: 600;
+  margin: 0 0 0 2%;
+
 }
 .mobileLogo {
   font-size: 6vw;
+  margin: 3% 0 3% 0;
+  top: 0;
 }
 .buttonCSS {
   position: relative;
