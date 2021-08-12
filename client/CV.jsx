@@ -5,8 +5,8 @@ const cvCSS = {
   display: 'flex',
   flexDirection: 'column',
   alignSelf: 'flex-start',
-  alignItems: window.screen.width <= 600 ? 'center' : 'flex-start',
-  marginLeft: window.screen.width <= 600 ? 0 : '10%',
+  alignItems: window.screen.width <= 550 ? 'center' : 'flex-start',
+  marginLeft: window.screen.width <= 550 ? 0 : '10%',
   width: '100%',
 };
 

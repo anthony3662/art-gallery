@@ -10,8 +10,8 @@ const wrapperCSS = {
 const videoCSS = {
   marginTop: '5vh',
   marginBottom: '5vh',
-  width: window.screen.width <= 600 ? '100vw' : '100vh',
-  height: window.screen.width <= 600 ? '42vw' : '42vh'
+  width: window.screen.width <= 550 ? '100vw' : '100vh',
+  height: window.screen.width <= 550 ? '42vw' : '42vh'
 };
 
 

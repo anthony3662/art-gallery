@@ -1,5 +1,5 @@
 import React from 'react';
-const isMobile = window.screen.width <= 600 || window.innerWidth <= 600;
+const isMobile = window.screen.width <= 550
 //props.collection, props.index, props.image, props.iconClick(collection, index)
 
 

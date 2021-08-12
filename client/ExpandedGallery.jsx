@@ -1,6 +1,6 @@
 import React from 'react';
 //this.props.images, this.props.startingIndex, this.props.close
-const isMobile = window.screen.width <= 600;
+const isMobile = window.screen.width <= 550;
 
 const imageCSS = {
   position: 'relative',

@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from './icon.jsx';
 import ExpandedGallery from './ExpandedGallery.jsx';
 
-const isMobile = window.screen.width <= 600;
+const isMobile = window.screen.width <= 550;
 
 
 const wrapperCSS = {

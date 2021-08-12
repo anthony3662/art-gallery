@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-const isMobile = window.screen.width <= 600;
 
 import Navigation from './Navigation.jsx';
 import MobileNavigation from './MobileNavigation.jsx';
@@ -18,6 +17,7 @@ const bodyCSS = {
 };
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
 
@@ -29,6 +29,13 @@ class App extends React.Component {
     this.expandGallery = this.expandGallery.bind(this);
     this.closeGallery = this.closeGallery.bind(this);
 
+    window.addEventListener('resize', () => {
+      console.log(window.screen.width);
+      this.setState({
+        isMobile: window.screen.width <= 550
+      });
+    });
+
     this.state = {
       page: 'Painting',
       dataReceived: false,
@@ -37,7 +44,8 @@ class App extends React.Component {
       paintings: {},
       drawings: {},
       videos: [],
-      cv: ''
+      cv: '',
+      isMobile: window.screen.width <= 550
     };
   }
 
@@ -131,12 +139,12 @@ class App extends React.Component {
   render() {
     return (
       <div style={bodyCSS}>
-        {!this.state.expanded &&
+        {!this.state.isMobile && !this.state.expanded &&
           <Navigation changePage={this.changePage}/>
         }
-        {/* {isMobile && !this.state.expanded &&
+        {this.state.isMobile && !this.state.expanded &&
           <MobileNavigation changePage={this.changePage}/>
-        } */}
+        }
         {this.state.dataReceived && this.state.page === 'Painting' &&
           <Gallery collections={this.state.paintings} expandGallery={this.expandGallery} closeGallery={this.closeGallery} />
         }

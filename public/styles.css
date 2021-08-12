@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('helvetica-neue-regular') format('woff');
-  font-weight: normal;
+  src: url('PragmaticaMedium.otf');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -52,7 +52,6 @@ body {
   font-family: HelveticaNeue;
   font-size: 3.8vw;
   cursor: pointer;
-  font-weight: 600;
   margin: 0 0 0 2%;
 
 }
@@ -112,4 +111,16 @@ body {
 .contactRow {
   display: flex;
   align-items: center;
+}
+#mobileTopRow { /* extends down to 11%*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #eeeeee;
+  z-index: 10;
+  top: -2%;
+  height: 10%;
+  /* margin: 3% 0 3% 0; */
 }
