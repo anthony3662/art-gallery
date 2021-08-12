@@ -30,7 +30,7 @@ const iconCSS = {
   // fontVariant: 'small-caps',
   // fontSize: '8vw',
   width: '14%',
-  marginRight: '8vw'
+  marginRight: '6vw'
 };
 
 const toggleButtonCSS = {
