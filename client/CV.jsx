@@ -8,6 +8,7 @@ const cvCSS = {
   alignItems: window.screen.width <= 550 ? 'center' : 'flex-start',
   marginLeft: window.screen.width <= 550 ? 0 : '10%',
   width: '100%',
+  top: window.screen.width <= 550 ? '10vh' : 0
 };
 
 const headerCSS = {
@@ -38,10 +39,10 @@ var CV = function(props) {
     <div style={cvCSS}>
       {/* {cvTags} */}
       {/* <h2 id="comingSoon">Coming Soon</h2> */}
-      <a href="https://instagram.com/benbrockart/" style={{marginLeft: window.screen.width <=600 ? '19%' : '-0.5%'}}>
+      <a href="https://instagram.com/benbrockart/" style={{marginLeft: window.screen.width <=550 ? '19%' : '-0.5%'}}>
         <img style={{width: window.screen.width <= 600 ? '75%': '20%', marginBottom: '3vh', marginTop: window.screen.width <= 600 ? '5vh' : 0}} src="https://i.ibb.co/JFDGyb8/ig-Logo-Color-Corrected.jpg"></img>
       </a>
-      <div className="contactRow" style={{fontSize: window.screen.width <= 600 ? '5vw' : '1.3vw'}}>
+      <div className="contactRow" style={{fontSize: window.screen.width <= 550 ? '5vw' : '1.3vw'}}>
         <h4 className="contactLabel"></h4>
         <a style={{fontFamily: 'Verdana', color: '#333333'}} href="mailto:benbrockart@gmail.com">benbrockart@gmail.com</a>
       </div>
