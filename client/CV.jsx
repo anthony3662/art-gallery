@@ -40,7 +40,7 @@ var CV = function(props) {
       {/* {cvTags} */}
       {/* <h2 id="comingSoon">Coming Soon</h2> */}
       <a href="https://instagram.com/benbrockart/" style={{marginLeft: window.screen.width <=550 ? '19%' : '-0.5%'}}>
-        <img style={{width: window.screen.width <= 600 ? '75%': '20%', marginBottom: '3vh', marginTop: window.screen.width <= 600 ? '5vh' : 0}} src="https://i.ibb.co/JFDGyb8/ig-Logo-Color-Corrected.jpg"></img>
+        <img style={{width: window.screen.width <= 600 ? '75%': '20%', marginBottom: '3vh', marginTop: window.screen.width <= 600 ? '5vh' : 0}} src="https://i.ibb.co/4NTqMWF/ig-Logo-Color-Corrected-jpg-1.png"></img>
       </a>
       <div className="contactRow" style={{fontSize: window.screen.width <= 550 ? '5vw' : '1.3vw'}}>
         <h4 className="contactLabel"></h4>
