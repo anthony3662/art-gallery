@@ -42,13 +42,14 @@ const toggleButtonCSS = {
 };
 const selectedCSS = {
   // textDecoration: 'solid underline purple 5px',
-  fontWeight: 'bold',
+  // fontWeight: 'bold',
   border: 0,
   backgroundColor: 'transparent',
   fontFamily: 'Verdana',
   // fontVariant: 'small-caps',
   fontSize: '5vw',
-  margin: '1vh 1vh'
+  margin: '1vh 1vh',
+  textDecoration: 'underline'
 };
 
 const buttonCSS = {
@@ -69,7 +70,7 @@ const menuCSS = {
   top: '11%',
   alignSelf: 'flex-end',
   marginRight: '7%',
-  backgroundColor: '#bbbbbb',
+  backgroundColor: '#aaaaaa',
   padding: '2%'
 
 };

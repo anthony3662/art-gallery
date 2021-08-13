@@ -9,7 +9,8 @@ const wrapperCSS = {
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',
-  width: '100%'
+  width: '100%',
+  top: isMobile ? '11vh' : 0
 };
 
 const collectionCSS = {
@@ -30,7 +31,8 @@ const collectionNameCSS = {
   textTransform: 'uppercase',
   fontWeight: '100',
   fontSize: isMobile ? '6vw' : '1.4vw',
-  color: '#555555'
+  color: '#555555',
+  marginTop: 0
 }
 
 class Gallery extends React.Component {
