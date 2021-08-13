@@ -72,7 +72,7 @@ const menuCSS = {
   top: '11%',
   alignSelf: 'flex-end',
   marginRight: '7%',
-  backgroundColor: '#aaaaaa',
+  backgroundColor: '#cccccc',
   padding: '2%'
 
 };
