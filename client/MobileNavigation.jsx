@@ -15,7 +15,7 @@ const wrapperCSS = {
 
 const logoCSS = {
   fontFamily: 'HelveticaNeue',
-  fontSize: '7vw',
+  fontSize: '6vw',
   cursor: 'pointer',
   marginTop: '2vh',
   marginBottom: '2vh',
@@ -29,8 +29,8 @@ const iconCSS = {
   // fontFamily: 'Verdana',
   // fontVariant: 'small-caps',
   // fontSize: '8vw',
-  width: '14%',
-  marginRight: '6vw'
+  width: '7%',
+  marginRight: '7vw'
 };
 
 const toggleButtonCSS = {
