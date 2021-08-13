@@ -32,8 +32,8 @@ const leftCSS = {
   top: isMobile ? '47.5%' : '43.5%', //centers on image w/ height 92%, 92/2 - 2.5
   left: '5%',
   transform: 'rotate(180deg)',
-  cursor: 'pointer'
-
+  cursor: 'pointer',
+  userSelect: 'none'
 };
 
 const rightCSS = {
@@ -42,8 +42,8 @@ const rightCSS = {
   height: '5%',
   top: isMobile ? '47.5%' :'43.5%',
   left: '90%',
-  cursor: 'pointer'
-
+  cursor: 'pointer',
+  userSelect: 'none'
 };
 
 class ExpandedGallery extends React.Component {
