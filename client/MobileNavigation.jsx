@@ -19,8 +19,8 @@ const logoCSS = {
   cursor: 'pointer',
   marginTop: '2vh',
   marginBottom: '2vh',
-  marginLeft: '8vw'
-
+  marginLeft: '8vw',
+  letterSpacing: '.06em'
 };
 
 const iconCSS = {
