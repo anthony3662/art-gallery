@@ -11,6 +11,7 @@ const wrapperCSS = {
   top: '-2%',
   width: '100%',
   margin: '3% 0 3% 0',
+  backgroundColor: '#eeeeee'
 };
 
 const logoCSS = {
