@@ -21,23 +21,23 @@
 
 const paintings = {
   collection0: [
-    {url: "https://i.ibb.co/9nBYQCy/firstone.jpg", name: "Dad's Garage, 2020, acrylic on canvas", dimensions: '36 x 36 inches'},
-    {url: "https://i.ibb.co/TwFGxxX/20210612-194229-jpg.png", name: 'Redirection, 2020, acrylic on canvas', dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/gWs686T/20210612-183752-jpg.png", name: "I Caused All my Breakups, 2020, acrylic on canvas", dimensions: '40 x 30 inches'},
-    {url: "https://i.ibb.co/Y3zW8gn/20210612-191705-jpg.png", name: "Camel Castle, 2020, acrylic on canvas", dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/D9cWXYL/20210612-193102-jpg.png", name: "I Shouldn't Have To, 2020, acrylic on canvas", dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/MSDZhmc/lastone.jpg", name: "Local Celebrity, 2020, acrylic on canvas", dimensions: '40 x 30 inches'},
-    {url: 'https://i.ibb.co/0FLvzFm/highquality.jpg', name: "Pilgrim's Progress, 2020, acrylic on canvas", dimensions: '30 x 40 inches'},
-    {url: "https://i.ibb.co/sq3Swd1/20210628-133031.jpg", name: 'Find Stuff to Do, 2020, acrylic on canvas', dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/LQm2nGN/20210628-134815.jpg", name: "Paid to Party, 2020, acrylic on canvas", dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/Hx1syGV/20210612-194419-jpg.png", name: 'If Only to Live in Your Memory, 2020, acrylic on canvas', dimensions: '18 x 14 inches'},
-    {url: "https://i.ibb.co/BwySFVH/20210628-132810.jpg", name: 'Celtic Woman, Celtic Man, 2020, acrylic on canvas', dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/8YShvjg/20210612-194852-jpg.png", name: 'Antebellum Dream Look, 2020, acrylic on canvas', dimensions: '20 x 18 inches'},
-    {url: "https://i.ibb.co/26tgzQY/20210612-195750-jpg.png", name: 'Celestial Flesh, 2020, acrylic on canvas', dimensions: '18 x 20 inches'},
-    {url: "https://i.ibb.co/n3WTYR9/20210628-135317.jpg", name: "Pulling Back, 2020, acrylic on canvas", dimensions: '30 x 24 inches'},
-    {url: "https://i.ibb.co/PwznPP7/20210612-200528-jpg.png", name: 'Ghosted While Dating, 2020, acrylic on canvas', dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/9nBYQCy/firstone.jpg", name: "Dad's Garage, 2020. acrylic on canvas", dimensions: '36 x 36 inches'},
+    {url: "https://i.ibb.co/TwFGxxX/20210612-194229-jpg.png", name: 'Redirection, 2020. acrylic on canvas', dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/gWs686T/20210612-183752-jpg.png", name: "I Caused All my Breakups, 2020. acrylic on canvas", dimensions: '40 x 30 inches'},
+    {url: "https://i.ibb.co/Y3zW8gn/20210612-191705-jpg.png", name: "Camel Castle, 2020. acrylic on canvas", dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/D9cWXYL/20210612-193102-jpg.png", name: "I Shouldn't Have To, 2020. acrylic on canvas", dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/MSDZhmc/lastone.jpg", name: "Local Celebrity, 2020. acrylic on canvas", dimensions: '40 x 30 inches'},
+    {url: 'https://i.ibb.co/0FLvzFm/highquality.jpg', name: "Pilgrim's Progress, 2020. acrylic on canvas", dimensions: '30 x 40 inches'},
+    {url: "https://i.ibb.co/sq3Swd1/20210628-133031.jpg", name: 'Find Stuff to Do, 2020. acrylic on canvas', dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/LQm2nGN/20210628-134815.jpg", name: "Paid to Party, 2020. acrylic on canvas", dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/Hx1syGV/20210612-194419-jpg.png", name: 'If Only to Live in Your Memory, 2020. acrylic on canvas', dimensions: '18 x 14 inches'},
+    {url: "https://i.ibb.co/BwySFVH/20210628-132810.jpg", name: 'Celtic Woman, Celtic Man, 2020. acrylic on canvas', dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/8YShvjg/20210612-194852-jpg.png", name: 'Antebellum Dream Look, 2020. acrylic on canvas', dimensions: '20 x 18 inches'},
+    {url: "https://i.ibb.co/26tgzQY/20210612-195750-jpg.png", name: 'Celestial Flesh, 2020. acrylic on canvas', dimensions: '18 x 20 inches'},
+    {url: "https://i.ibb.co/n3WTYR9/20210628-135317.jpg", name: "Pulling Back, 2020. acrylic on canvas", dimensions: '30 x 24 inches'},
+    {url: "https://i.ibb.co/PwznPP7/20210612-200528-jpg.png", name: 'Ghosted While Dating, 2020. acrylic on canvas', dimensions: '18 x 20 inches'},
     {url: 'https://i.ibb.co/68hQwgt/cobainrow.png', name: 'No Recess', dimensions: '18 x 44 inches overall'}
-    // {url: "https://i.ibb.co/Jzn2dvt/20210612-200823.jpg", name: 'undefined, 2020, acrylic on canvas", dimensions: 'undefined'}
+    // {url: "https://i.ibb.co/Jzn2dvt/20210612-200823.jpg", name: 'undefined, 2020. acrylic on canvas", dimensions: 'undefined'}
   ],
   // 'No Recess': [
   //   {url: 'https://i.ibb.co/m0DR4MT/cobainsmall.png'},
