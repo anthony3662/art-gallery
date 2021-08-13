@@ -17,6 +17,7 @@ body {
   align-items: center;
   width: 100%;
   margin-bottom: 3%;
+  z-index: 200;
 }
 .topPanelDesktop {
   flex-direction: row;
@@ -52,7 +53,7 @@ body {
 .logo {
   position: relative;
   font-family: HelveticaNeue;
-  font-size: 3.8vw;
+  font-size: 3.2vw;
   cursor: pointer;
   margin: 0 0 0 2%;
 

@@ -4,14 +4,18 @@ const wrapperCSS = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  width: '100%'
+  width: '100%',
+  position: 'fixed',
+  height: '100vh',
+  justifyContent: 'center',
+  alignItems: 'center'
 };
 
 const videoCSS = {
   marginTop: '5vh',
   marginBottom: '5vh',
   width: window.screen.width <= 550 ? '100vw' : '100vh',
-  height: window.screen.width <= 550 ? '42vw' : '42vh'
+  height: window.screen.width <= 550 ? '42vw' : '42vh',
 };
 
 

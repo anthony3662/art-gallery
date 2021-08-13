@@ -27,10 +27,10 @@ const collectionCSS = {
 
 const collectionNameCSS = {
   marginLeft: '10%',
-  fontFamily: 'Verdana',
+  fontFamily: 'Helvetica',
   textTransform: 'uppercase',
   fontWeight: '100',
-  fontSize: isMobile ? '6vw' : '1.4vw',
+  fontSize: isMobile ? '5vw' : '1.3vw',
   color: '#555555',
   marginTop: 0
 }
