@@ -137,7 +137,7 @@ class ExpandedGallery extends React.Component {
       fontFamily: 'Verdana',
       textAlign: window.screen.width < window.screen.height ? 'left' : 'center',
       margin: window.screen.width < window.screen.height ? '2% 0 0 2%' : '1% 0 3% 0',
-      color: '#676767'
+      color: '#777777'
     };
     if (isMobile) {
       descriptionCSS.fontSize = '2.6vw';
