@@ -123,7 +123,6 @@ body {
   width: 100%;
   background-color: #eeeeee;
   z-index: 10;
-  top: -2%;
   height: 10%;
-  margin: 3% 0 3% 0;
+  padding-top: 2%;
 }

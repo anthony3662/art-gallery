@@ -11,7 +11,6 @@ const wrapperCSS = {
   top: '-2%',
   width: '100%',
   margin: '3% 0 3% 0',
-  backgroundColor: '#eeeeee'
 };
 
 const logoCSS = {
@@ -117,7 +116,7 @@ class MobileNavigation extends React.Component {
   render() {
     return (
       <div style={wrapperCSS}>
-        <div id="mobileTopRow">
+        <div id="mobileTopRow" style={{position: 'relative', height: '100%', backgroundColor: '#eeeeee'}}>
           <p style={logoCSS} onClick={this.logoClick} >BEN BROCK</p>
           {/* <button style={toggleButtonCSS} onClick={this.toggleMenu} >Menu</button> */}
           <svg style={iconCSS} onClick={this.toggleMenu} fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="96px" height="96px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
