@@ -30,7 +30,7 @@ const iconCSS = {
   // fontVariant: 'small-caps',
   // fontSize: '8vw',
   width: '7%',
-  marginRight: '7vw'
+  marginRight: '8vw'
 };
 
 const toggleButtonCSS = {
@@ -119,8 +119,8 @@ class MobileNavigation extends React.Component {
         <div id="mobileTopRow" style={{position: 'relative', height: '100%', backgroundColor: '#eeeeee'}}>
           <p style={logoCSS} onClick={this.logoClick} >BEN BROCK</p>
           {/* <button style={toggleButtonCSS} onClick={this.toggleMenu} >Menu</button> */}
-          <svg style={iconCSS} onClick={this.toggleMenu} fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg>
-          {/* client says this one too heavy <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="96px" height="96px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg> */}
+          {/* <svg style={iconCSS} onClick={this.toggleMenu} fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg> */}
+          <svg style={iconCSS} onClick={this.toggleMenu} fill="#676767" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="96px" height="96px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
         </div>
 
         {this.state.expanded &&
