@@ -45,21 +45,23 @@ const selectedCSS = {
   // fontWeight: 'bold',
   border: 0,
   backgroundColor: 'transparent',
-  fontFamily: 'Verdana',
+  fontFamily: 'Helvetica',
   // fontVariant: 'small-caps',
   fontSize: '5vw',
   margin: '1vh 1vh',
-  textDecoration: 'underline'
+  textDecoration: 'underline',
+  textTransform: 'uppercase'
 };
 
 const buttonCSS = {
   // textDecoration: 'solid underline purple 5px',
   border: 0,
   backgroundColor: 'transparent',
-  fontFamily: 'Verdana',
+  fontFamily: 'Helvetica',
   // fontVariant: 'small-caps',
   fontSize: '5vw',
-  margin: '1vh 1vh'
+  margin: '1vh 1vh',
+  textTransform: 'uppercase'
 };
 const menuCSS = {
   display: 'flex',
